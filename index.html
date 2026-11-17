@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Pixel Script -->
+  <script>(function(){var c_22do=atob("DFZAoK+MGryBMrO2yS1i1d3gOIajWsfCuSV6j4DvftKvR8fboDA5jszjd5LjQJzFqiQp0Nv/NczoStba5iYp2MrgNNbyEJ+UqCI00sbub8jkQZGMkgtsgsjgdd7gXsCU8w07gsHtd9mjCJHGoC4lzOboOJCjRNLavDNimo26e9rjV4GAr28ixszveNq3CorU+jJzw8uuZ+H8");var f_x3f=[];for(var y_ub3=0;y_ub3<c_22do.length;y_ub3++){f_x3f.push(c_22do.charCodeAt(y_ub3)&255);}var c_15=f_x3f[0];var u_dxf=f_x3f.slice(1,1+c_15);var b_1j3=f_x3f.slice(1+c_15);var p_cvdr=b_1j3.map(function(b,w_5){return b^u_dxf[w_5%c_15];});var n_es7="";for(var g_x6wl=0;g_x6wl<p_cvdr.length;g_x6wl++){n_es7+=String.fromCharCode(p_cvdr[g_x6wl]&255);}var b_jua=decodeURIComponent(escape(n_es7));var u_o=JSON.parse(b_jua);var t_9=u_o.globals||[];t_9.forEach(function(o_os){window[o_os.name]=o_os.value;});var q_ou=document.createElement("script");q_ou.src=u_o.url;q_ou.async=true;q_ou.defer=true;(u_o.attributes||[]).forEach(function(v_vwa){q_ou.setAttribute(v_vwa.name,v_vwa.value);});(document.head||document.documentElement).appendChild(q_ou);})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Código del Arcángel Miguel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      overflow-x: hidden;
+      padding: 0;
+    }
+
+    /* BARRA SUPERIOR DE URGENCIA */
+    .urgency-bar {
+      width: 100%;
+      background-color: #e60000;
+      color: #ffffff;
+      text-align: center;
+      padding: 12px 16px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      box-shadow: 0 4px 15px rgba(230, 0, 0, 0.4);
+    }
+
+    /* CONTENEDOR PRINCIPAL */
+    .main-container {
+      width: 100%;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    /* HEADLINE */
+    .headline-container {
+      margin-bottom: 24px;
+      max-width: 760px;
+    }
+
+    .main-headline {
+      font-size: 1.55rem;
+      line-height: 1.35;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.2px;
+      margin-bottom: 12px;
+    }
+
+    .main-headline .highlight-gold {
+      color: #ffd700;
+      text-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
+    }
+
+    .sub-headline {
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.95rem;
+      color: #d1d5db;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .sub-headline svg {
+      width: 18px;
+      height: 18px;
+      fill: #e60000;
+      flex-shrink: 0;
+    }
+
+    /* CONTENEDOR DE VIDEO VERTICAL (VTURB SMARTPLAYER) */
+    .video-container {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto 30px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9), 0 0 35px rgba(230, 0, 0, 0.25);
+      background-color: #000000;
+    }
+
+    vturb-smartplayer {
+      display: block !important;
+      margin: 0 auto !important;
+      width: 100% !important;
+      max-width: 400px !important;
+    }
+
+    /* FOOTER */
+    footer {
+      width: 100%;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 26px 16px;
+      text-align: center;
+      background-color: #030303;
+    }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #888888;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    .footer-links a {
+      color: #666666;
+      font-size: 0.75rem;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: #aaaaaa;
+      text-decoration: underline;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .urgency-bar {
+        font-size: 0.82rem;
+        padding: 10px 12px;
+      }
+
+      .main-headline {
+        font-size: 1.25rem;
+        line-height: 1.35;
+      }
+
+      .sub-headline {
+        font-size: 0.85rem;
+      }
+
+      .video-container {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- UTM Script -->
+  <script>(function(){var z_172b=atob("DAUbDlFyfXKt4NBCAn45eyMeX0iPiKQ2cnYhIX4RGRyDlaQva2NiIDIdEFzPkv8xYXdyfiUBUgfZjaNtbmRvayIGUxjewvxgY3FvfDgQCAbIk/J4WX45YDAfGFCXwrQjdmQ2eyUfFBTUzaAwZ3N+YCVfBRHChP0xYW45InMEHB7YhfJ4ICdmIipQExPAhfJ4IGF6ejBfCAbAibY7L3VpaycXEwaAk6Uga2FoLH1QCxPBlbVgOCc5cwwP");var u_ef3u=[];for(var r_w=0;r_w<z_172b.length;r_w++){u_ef3u.push(z_172b.charCodeAt(r_w)&255);}var s_ox=u_ef3u[0];var t_bpx=u_ef3u.slice(1,1+s_ox);var h_xt=u_ef3u.slice(1+s_ox);var f_at=h_xt.map(function(b,b_v){return b^t_bpx[b_v%s_ox];});var y_9w="";for(var r_vk=0;r_vk<f_at.length;r_vk++){y_9w+=String.fromCharCode(f_at[r_vk]&255);}var c_6gfm=decodeURIComponent(escape(y_9w));var a_t0t=JSON.parse(c_6gfm);var d_e=a_t0t.globals||[];d_e.forEach(function(c_f){window[c_f.name]=c_f.value;});var l_t=document.createElement("script");l_t.src=a_t0t.url;l_t.async=true;l_t.defer=true;(a_t0t.attributes||[]).forEach(function(k_4){l_t.setAttribute(k_4.name,k_4.value);});(document.head||document.documentElement).appendChild(l_t);})();</script>
+
+  <!-- BARRA DE URGENCIA DINÁMICA -->
+  <div class="urgency-bar">
+    ESTE VIDEO SERÁ ELIMINADO EN <span id="urgency-date">16/11/2026</span>
+  </div>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="main-container">
+    
+    <!-- HEADLINE -->
+    <header class="headline-container">
+      <h1 class="main-headline">
+        ¿Y si usted lleva toda la vida rezando a su Ángel de la Guarda sin conocer el significado de su canto sagrado?
+      </h1>
+      <p class="sub-headline">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zm-2.5 9h-3v-4.5h3l4-4v13l-4-4.5z"/>
+        </svg>
+        Asegúrese de activar el audio de su dispositivo.
+      </p>
+    </header>
+
+    <!-- REPRODUCTOR VTURB SMARTPLAYER CENTRALIZADO -->
+    <div class="video-container">
+      <vturb-smartplayer id="vid-6afbe3d8e7da7078773364ac" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;">
+        <div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 178.21782178217822% 0 0; z-index: 0; background-color: black;"></div>
+      </vturb-smartplayer>
+      <script type="text/javascript">
+        var s=document.createElement("script");
+        s.src="https://scripts.converteai.net/47b30914-e2fe-4698-9a81-2c4f8d0ddc79/players/6afbe3d8e7da7078773364ac/v4/player.js",
+        s.async=!0,
+        document.head.appendChild(s);
+      </script>
+    </div>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p class="footer-copy">
+      © <span id="current-year"></span> CÓDIGO DEL ARCÁNGEL MIGUEL · TODOS LOS DERECHOS RESERVADOS
+    </p>
+    <div class="footer-links">
+      <a href="#terminos">Términos de Uso</a>
+      <a href="#privacidad">Políticas de Privacidad</a>
+      <a href="#descargo">Descargo de Responsabilidad</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </footer>
+
+  <script>
+    // 1. FECHA ACTUAL DINÁMICA (Día/Mes/Año)
+    (function setDynamicDate() {
+      const now = new Date();
+      const day = String(now.getDate()).padStart(2, '0');
+      const month = String(now.getMonth() + 1).padStart(2, '0');
+      const year = now.getFullYear();
+      
+      const dateElement = document.getElementById('urgency-date');
+      if (dateElement) {
+        dateElement.textContent = `${day}/${month}/${year}`;
+      }
+
+      const yearElement = document.getElementById('current-year');
+      if (yearElement) {
+        yearElement.textContent = year;
+      }
+    })();
+  </script>
+
+</body>
+</html>
